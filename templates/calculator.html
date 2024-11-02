@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/calculator" class="active">Calculator</a>
+    <a href="/about">About</a>
+</nav>
+
+<div class="calculator">
+    <h1>Calculator</h1>
+    <form action="calculate" method="post">
+        <input type="number" name="num1" placeholder="First Number" required>
+        <input type="number" name="num2" placeholder="Second Number" required>
+        <div>
+            <button type="submit" name="operation" value="add">+</button>
+            <button type="submit" name="operation" value="subtract">-</button>
+            <button type="submit" name="operation" value="multiply">x</button>
+            <button type="submit" name="operation" value="divide">/</button>
+        </div>
+    </form>
+</div>
+
+{% if result is not none %}
+    <h2>Result: {{ result }}</h2>
+{% endif %}
+
+</body>
+</html>
+
+

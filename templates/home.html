@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+
+<nav>
+    <a href="/" class="active" class="w3-bar-item w3-button">Home</a>
+    <a href="/calculator" class="w3-bar-item w3-button">Calculator</a>
+    <a href="/about" class="w3-bar-item w3-button">About</a>
+</nav>
+
+
+
+<h1>WELCOME TO THE WORLD OF CALCULATORS</h1>
+
+
+
+
+<div class="content">
+    <h1>Facts About Calculators</h1>
+    <ul>
+        {% for facts in facts %}
+        <li>{{ facts }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div id="images">
+    <img src="{{url_for('static', filename= 'images/hellokittycalc.jpg')}}"/>
+    <img src="{{url_for('static', filename= 'images/melodycalc.jpg')}}"/>
+</div>
+
+<h1>WHAT IS CALCULATORS?</h1>
+<h2> a usually electronic device for performing mathematical calculations.</h2>
+<h1>WHAT ARE SOME ADVANTAGES OF CALCULATORS</h1>
+<h2>Using a calculator can save time, increase accuracy, improve efficiency, and simplify complex calculations.
+    It is especially critical for financial planning and can enhance learning by allowing students to focus on the underlying concepts</h2>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

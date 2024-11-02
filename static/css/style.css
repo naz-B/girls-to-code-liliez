@@ -1,0 +1,65 @@
+.calculator {
+    color: purple;
+    size: 108px;
+    background-color: pink;
+}
+.content {
+    list-style-type: square;
+    color: purple;
+}
+nav {
+    display: inline;
+    background-color: pink;
+    border: 8px solid fuchsia;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    size: 65px;
+    height: 65px;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    font-color: white;
+    margin-right: 20px;
+    word-spacing: 200px;
+}
+.active {
+    background-color: fuchsia;
+    font-color: black;
+    size: 75px;
+    height: 65;
+}
+.images {
+   display: inline;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   padding: 5px;
+   width: 150px;
+   size: 150px;
+}
+.image{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    display: inline;
+    size: 150px;
+}
+h1{
+    color: fuchsia;
+}
+h2{
+    color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
